@@ -1,0 +1,322 @@
+
+html, body, ul, li, p {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color:rgb(24, 26, 10);
+    background-color:rgb(252, 250, 249);
+}
+
+h1 {
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    max-width: 380px;
+    max-height: auto;
+    border-bottom: rgb(199, 228, 37) solid 4px;    
+}
+
+h2 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-top: 100px;
+    margin-left: 150px;
+}
+
+h3 {   
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    margin: auto 10% auto 10%;
+    text-align: justify;
+}
+
+p::first-letter {
+    font-family:'Courier New',Courier,monospace;
+    font-size:40px;
+    color:#634281;
+    text-transform:uppercase;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    'hdr hdr hdr hdr' 
+    'cap cap cap cap' 
+    'ptf ptf ptf ptf'
+    'fto fto fto fto'
+    'svç svç svç svç'
+    'vgn vgn vgn vgn'
+    'jov jov jov jov'
+    'ctt ctt ctt ctt'
+    'ftr ftr ftr ftr';
+}
+
+header {
+    grid-area: hdr;
+    background-color: rgba(31, 128, 128, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    text-shadow:2px 2px 4px rgb(173, 15, 15);
+    letter-spacing: 5px;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;    
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.areaCapa {
+    grid-area: cap;
+    display:block;
+    position:relative;
+    background-image:url(img/a12.jpeg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin: auto 10% auto 10%;
+    height: 100vh; 
+}
+
+.areaPortifolio {
+    grid-area: ptf;
+    background-color: rgb(212, 200, 174);
+    height:100vh;
+}
+
+.areaFoto {
+    grid-area: fto;
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto auto auto;
+    justify-content: center;
+    gap: 30px;
+    margin: auto 10% auto 10%;
+    padding-top: 80px;
+}
+
+.areaServiço {
+    grid-area: svç;
+    background-color: rgb(202, 180, 192);
+    color: rgb(46, 44, 44);
+    height:100vh;
+}
+
+.areaViagem {
+    grid-area: vgn;
+    color: rgb(46, 44, 44);
+    height: 100vh;
+    padding-bottom: 10px;
+}
+
+.fotoViagem > img {
+    height: 400px;
+    width: 60em;
+    margin: 0 auto;
+}
+
+.areaJovem {
+    grid-area: jov;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(224, 182, 182);
+    height:100vh;
+}
+
+.areaContato {
+    grid-area: ctt;
+    display: block;
+    justify-content: center;
+    align-content: space-around;
+    height:65vh;
+    padding-top: 90px;
+    background-color: white;
+}
+    
+footer {
+    grid-area: ftr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: rgb(61, 6, 6);
+    opacity: 0.9; 
+    height: 20vh;
+}
+
+.endereço {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    letter-spacing: 4px;
+    color: white;
+    width: 400px;
+    height: 0 auto;
+    line-height: 1.5em;
+    margin-top: 15px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    box-shadow:0 4px 8px 0 rgba(17, 15, 15, 0.2),0 6px 20px 0 rgba(17, 15, 15, 0.2);
+    border-radius:10px;
+    margin-top: 15px;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.nome, .e-mail, .assunto, textarea {
+    width: 400px;
+    height: 25px;
+    margin-bottom: 2px;
+    padding: 4px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius:10px;
+}
+textarea {
+    height: 90px;
+}
+
+button {
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(215, 235, 177);
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius:10px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container  {
+        grid-template-areas:
+        'hdr hdr hdr hdr'
+        'cap cap cap cap'
+        'ptf ptf ptf ptf'
+        'fto fto fto fto'
+        'svç svç svç svç'
+        'vgn vgn vgn vgn'
+        'jov jov jov jov'
+        'ctt ctt ctt ctt'
+        'ftr ftr ftr ftr';
+    }
+  }
+
+/*-------------------------------------
+
+
+@media screen and (min-width: 599px) {
+    nav {
+      position: fixed;
+      top: 100px;
+      width: 1200px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+      justify-content: right;  
+    }
+  }
+  
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  ----------------------------------------*/
