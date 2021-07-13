@@ -114,7 +114,7 @@ header {
     grid-area: cap;
     display:block;
     position:relative;
-    background-image:url(img/a12.jpeg);
+    background-image:url(a12.jpeg);
     background-repeat:no-repeat;
     background-size:cover;
     margin: auto 10% auto 10%;
