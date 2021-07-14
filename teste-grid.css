@@ -121,6 +121,10 @@ header {
     height: 100vh; 
 }
 
+#capa {
+    background-image:url(img/a12.jpeg);
+}
+
 .areaPortifolio {
     grid-area: ptf;
     background-color: rgb(212, 200, 174);
