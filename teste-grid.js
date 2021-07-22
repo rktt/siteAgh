@@ -20,7 +20,7 @@ function toggleMenu(event) {
 		}
 }
 
-/* -----------------Validação do formulario e-mail-----------------*/
+/* -----------Validação do formulario e-mail------------*/
 function validar() {
 	var nome = frmEnvia.name.value;
 	var email = frmEnvia.email.value;
