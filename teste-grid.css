@@ -1,0 +1,136 @@
+body,ul {margin:0; padding:0;}
+
+#container {display:grid; grid-template-areas:'hdr hdr hdr hdr' 'cap cap cap cap' 'ptf ptf ptf ptf' 'fto fto fto fto' 'svç svç svç svç' 'vgm vgm vgm vgm' 'jov jov jov jov' 'ctt ctt ctt ctt' 'ftr ftr ftr ftr';}
+.header {grid-area:hdr; display:flex;/*flex-wrap: wrap;*/
+height:55px; background-color:rgba(31, 128, 128, 0.9); justify-content:space-evenly; align-items:center; padding:1em;}
+#container .header {position:fixed;/*position:-webkit-sticky; position: sticky;*/
+width:100%; z-index:1;}
+.logo {grid-area:hdr; display:flex; text-shadow:2px 2px 4px rgb(173, 15, 15); letter-spacing:0.2em;}
+#menu {grid-area:hdr; display:flex;}
+#menu li {border-right:rgb(20, 18, 17) solid 1px;}
+#menu li a {padding:1em; letter-spacing:0.1em; display:block;/*padding:10px;*/}
+#btn-mobile {display:none;}
+.areaCapa {grid-area:cap; margin:auto 10% auto 10%;}
+.areaCapa .fotoCapa {width:100vw; height:100vh;}
+.areaPortifolio {grid-area:ptf; margin:0 auto; background-color:rgb(212, 200, 174);}
+.areaFoto {grid-area:fto; display:flex; flex-wrap:wrap; justify-content:center; gap:1.5em; margin:3em 5% 3em 5%;}
+img {max-width:100%; display:flex; box-shadow:0 4px 8px 0 rgba(17, 15, 15, 0.5),0 6px 20px 0 rgba(17, 15, 15, 0.7); border-radius:10px; margin-top:0;}
+.areaServiço {grid-area:svç; margin:0 auto; background-color:rgb(202, 180, 192); color:rgb(46, 44, 44);}
+.areaViagem {grid-area:vgm; color:rgb(46, 44, 44);}
+.fotoViagem > img {height:400px; width:60em; margin:0 auto;}
+.areaJovem {grid-area:jov; margin:0 auto; background-color:rgb(224, 182, 182);}
+.areaContato {grid-area:ctt; margin:2em 5% 3em 5%; background-color:#fff;}
+/*display:block; justify-content:center;align-content:space-around; height:65vh;padding-top:90px;*/
+
+.footer {grid-area:ftr; display:flex; justify-content:space-evenly; align-items:center; background-color:rgb(61, 6, 6); opacity:0.9; height:20vh;}
+/*flex-wrap:wrap; align-items:flex-start; */
+
+.assunto,.e-mail,.nome,.txtArea {width:30em; height:1.6em; margin-bottom:2px; padding:4px; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.2); border-radius:10px;}
+.txtArea {height:5.7em;}
+.btn {width:30em; height:2.5em; padding:5px; background-color:rgb(215, 235, 177); box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.2); border-radius:10px; font-size:0.7em; letter-spacing:3px; cursor:pointer;}
+.endereço {font-family:'Courier New',Courier,monospace; font-size:0.9em; letter-spacing:4px; color:#fff; width:400px; line-height:1.5em;}
+
+li,ul {list-style:none;}
+a {font-family:Arial,Helvetica,sans-serif; font-size:1.1em; text-decoration:none; color:#fff;}
+a:hover {color:rgb(24, 26, 10); background-color:rgb(252, 250, 249);}
+h1 {margin:0 auto; text-align:center;}
+h2 {font-size:2em; font-family:Arial,Helvetica,sans-serif; text-align:left; padding-top:100px; margin-left:150px;}
+h3 {font-size:1.5em; font-family:'Courier New',Courier,monospace; text-align:center; margin-top:0.5em;}
+h4 {font-size:1.5em; font-family:'Courier New',Courier,monospace; margin-top:50px;}
+h5 {padding:10px; font-family:'Courier New',Courier,monospace; text-align:justify; max-width:380px; max-height:auto; border-bottom:rgb(199, 228, 37) solid 4px;}
+p {font-size:1.2em; font-family:Arial,Helvetica,sans-serif; line-height:40px; margin:auto 10% auto 10%; text-align:justify;}
+p::first-letter {font-family:'Courier New',Courier,monospace; font-size:40px; color:#634281; text-transform:uppercase;}
+
+/*=====================================================*/
+
+@media screen and (max-width: 992px) {
+.header {display:block; height:3.3em;}
+.logo {justify-content:center;}
+#menu {justify-content:center;}
+.areaCapa {margin:0 auto;}
+a {font-size:1em;}
+}
+
+/*=====================================================*/
+
+@media screen and (max-width: 768px) {
+h3,p {font-size:1em;}
+h1 {margin:0 auto;}
+h2 {margin-left:3em; font-size:1.5em;}
+.btn {margin:0 auto; width:350px; height:30px;}
+}
+
+/*=====================================================*/
+
+@media screen and (max-width: 700px) {
+.header {display:flex; height:30px; justify-content:space-around;}
+#btn-mobile {display:block;}
+#menu {display:block;
+    /*display none p/ o block o transition não consegue ocorrer
+    . para ocorrer o elemento já tem que existir na tela... e o none não existe...
+    então elimino ele e mudo p/ block. No active abaixo elimino por inteiro*/
+position:absolute; width:100%; top:62px; right:0; background-color:rgba(31, 128, 128, 0.9); transition:.6s; z-index:1000;/*inicia a transiçao em 0*/
+height:0; visibility:hidden;
+    /*começa escondido*/
+    /*para acertar o problema do elemento chegando atrasado
+         quando heigth ainda não desceu...inserimos o
+          overflow-y: hidden(escondido)*/
+overflow-y:hidden;}
+#nav.active #menu {/*termina a transiçao em 100*/
+height:100vh;/*height: calc (100vh - 62px);*/
+/*display: block;............eliminado...*/
+visibility:visible;/*agora vai ser visivel*/
+overflow-y:auto;
+}
+#menu li a {padding:1em 0; margin:0 3em; border-bottom:2px solid rgb(157, 226, 243);}
+#btn-mobile {display:flex; padding:.3em 1em; font-size:1em; border:none; background-color:none; cursor:pointer; gap:.6em;}
+#hamburger {display:block; border-top:2px solid; width:20px;}
+#hamburger::after,#hamburger::before {content:''; display:block; width:20px;/*somente para teste*/
+height:2px;
+/*currentColor...é uma variável que usa a cor que estivsr dentro so #hamburger anterior*/
+background-color:currentColor; margin-top:4px; transition:.3s; position:relative;}
+#nav.active #hamburger {border-top-color:transparent;}
+#nav.active #hamburger::before {transform:rotate(135deg);}
+#nav.active #hamburger::after {transform:rotate(-135deg); top:-6px;/*Só colocando o top o x não acerta a altura. 
+        precisamos lançar posicionamento pq top só funciona
+         se o elemento for posição relativo, absoluto ou fixo */
+}
+.endereço {font-family:sans-serif; font-size:0.7em; margin-left:1em;}
+.btn {width:300px;}
+
+}
+
+/*=====================================================*/
+@media screen and (max-width: 550px) {
+.endereço {margin-left:1.5em;}
+.btn {width:200px;}
+}
+
+/*=====================================================*/
+@media screen and (max-width: 480px) {
+.areaCapa {margin:0 auto;}
+.areaCapa .fotoCapa {width:100vw; height:50vh;}
+}
+
+/*=====================================================*/
+@media screen and (max-width: 480px) {
+h3,p {font-size:1em;}
+h1 {margin:0 auto;}
+h2 {margin-left:3em; font-size:1.2em;}
+.assunto,.e-mail,.nome,.txtArea {width:27em;}
+.btn {margin:0 auto; width:200px; height:30px;}
+}
+
+/*=====================================================*/
+@media screen and (max-width: 320px) {
+.btn {width:100px;}
+}
+
+/*=====================================================
+...verificar...
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+=====================================================*/
