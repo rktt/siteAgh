@@ -11,7 +11,7 @@ width:100%; z-index:1;}
 #menu li a {padding:1em; letter-spacing:0.1em; display:block;/*padding:10px;*/}
 #btn-mobile {display:none;}
 .areaCapa {grid-area:cap; margin:auto 10% auto 10%;}
-.areaCapa .fotoCapa {width:100vw; height:100vh;}
+.areaCapa .fotoCapa {width:100vw; height:100vh; object-fit: cover;}
 .areaPortifolio {grid-area:ptf; margin:0 auto; background-color:rgb(212, 200, 174);}
 .areaFoto {grid-area:fto; display:flex; flex-wrap:wrap; justify-content:center; gap:1.5em; margin:8em 5% 3em 5%;}
 img {max-width:100%; display:flex; box-shadow:0 4px 8px 0 rgba(17, 15, 15, 0.5),0 6px 20px 0 rgba(17, 15, 15, 0.7); border-radius:10px; margin-top:0;}
