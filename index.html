@@ -5,216 +5,199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site copia 3</title>
+    <title>Site copia 8</title>
+
     <link rel="stylesheet" href="teste-grid.css">
 </head>
 
 <body>
     <div id="container">
-
         <header class="header">
-
+            <!--=====================LOGOTIPO=================-->
             <div class="logo">
-                <a href="#capa">WWW.RAKNETT.PT</a>
-                <!--<img class="logo" src="a13a.jpg" alt="">-->
+                <a href="#home">WWW.RAKNETT.PT</a>
             </div>
-
-            <nav id="nav">
-                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                    aria-expanded="false">
-                    Menu<span id="hamburger"></span>
-                </button>
-
-                <ul id="menu" role="menu">
-                    <li><a href="#capa">Home</a></li>
-                    <li><a href="#portifolio">Portifolio</a></li>
-                    <li><a href="#foto">Fotos</a></li>
-                    <li><a href="#serviço">Serviços</a></li>
-                    <li><a href="#viagem">Viagens</a></li>
-                    <li><a href="#jovem">Jovem</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-
+            <!--=====================MENU HAMBURGER=================-->
+            <div class="seçao-Menu">
+                <div class="menuAlternancia on">
+                    <div class="um"></div>
+                    <div class="dois"></div>
+                    <div class="tres"></div>
+                </div>
+                <!--=====================MENU HORIZONTAL=================-->
+                <nav class="nav">
+                    <ul class="menuHorizonte" role="menuHorizonte">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#serviços">Serviços</a></li>
+                        <li><a href="#area-galeria">Galeria</a></li>
+                        <li><a href="#jovem">Jovem</a></li>
+                        <li><a href="#vdo-game">Game</a></li>
+                        <li><a href="#colaborador">Portifolio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <!-- Home...seção de apresentação...imagem fundo na 1ª página-->
-        <section class="areaCapa" id="capa">
-            <img class="fotoCapa" src="a12.jpeg" alt="">
+        <!--=====================APRESENTAÇAO E IMAGENS=================-->
+        <section class="areaHome" id="home">
+            <li id="li1">
+                Digital Graphics (Cartoon)&emsp;
+                <i class="far fa-chart-bar" id="i-grafico"></i>
+            </li>
+            <li id="li2">
+                Photos/Videos editing&emsp;
+                <i class="fas fa-photo-video" id="i-video"></i>
+            </li>
+            <li id="li3">
+                Digital Game Design&emsp;
+                <i class="fas fa-gamepad" id="i-game"></i>
+            </li>
+            <li id="li4">
+                Website Developer&emsp;
+                <i class="fas fa-sitemap" id="i-site"></i>
+            </li>
+            <li id="li5">
+                Digital Marketing&emsp;
+                <i class="fas fa-tv" id="i-tv"></i>
+            </li>
+        </Section>
+
+        <!--=====================TEXTO DE BOAS VINDAS =================-->
+        <section class="areaServiços" id="serviços">
+            <h2>Raknett Digital Services</h2><br>
+            <p>Bem-vindos;</p><br>
+            <p>Somos uma “Agência de Serviços Digitais” que atua nos continentes sul-americano (Brasil) e europeu
+                (Portugal e Itália).</p><br>
+            <p> Os sonhos e ambições são características comuns das pessoas inteligentes, por isso, prestamos ajuda no
+                desenvolvimento dos teus projetos.</p><br>
+            <p>Procuramos proporcionar uma relação de interação e confiança entre nossos clientes de maneira que o apoio
+                satisfaça os teus ideais.</p><br>
+            <p>Caso queira; Podemos, também, aconselhar e acompanhar tuas idéias, em todas as fases ou processos de
+                desenvolvimento dos projetos.</p><br><br>
         </section>
 
-        <!-- Portifolio...seção dos trabalhos realizados-->
-        <section class="areaPortifolio" id="portifolio">
-            <h2>Portifolio</h2><br>
-            <p>
-                aorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor est nobis
-                veniam! Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum pariatur sequi
-                similique tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum
-                molestiae nemo officiis placeat quos repellat saepe temporibus voluptatum.</p><br>
-            <p>
-                bonsectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor
-                est nobis veniam! Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum pariatur
-                sequi
-                similique tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum
-                molestiae nemo officiis placeat quos repellat saepe temporibus voluptatum.</p><br>
-            <p>
-                cdipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi
-                dolor est nobis veniam! Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum
-                pariatur sequi
-                similique tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum
-                molestiae nemo officiis placeat quos repellat saepe temporibus voluptatum.</p><br>
-        </section>
-
-        <!--Seção de fotos diversas da empresa e outros-->
-        <section class="areaFoto" id="foto">
-            <div>
-                <img src="a1.png">
-                <h5>legendacpsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor
-                    est nobis veniam! Eius rerum, un</h5>
+        <!--=====================GALERIA ( IMAGENS DIVERSAS )=================-->
+        <section class="areaGaleria" id="area-galeria">
+            <div class="galeria-item">
+                <img src="img/a1.png" alt="">
+                <p>uso de imagens nas postagens tende a aumentar a conversão, dando um resultado melhor e de maior
+                    alcance do que publicações.</p>
             </div>
-            <div>
-                <img src="a2.png">
-                <h5>legendacpsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor
-                    est nobis veniam! Eius rerum, un</h5>
+            <div class="galeria-item">
+                <img src="img/a2.png" alt="">
+                <p>produtos que aumentam o impacto visual das suas postagens e reúnem as informações de maneira mais
+                    direta e objetiva.</p>
             </div>
-            <div>
-                <img src="a3.png">
-                <h5>legendacpsum dolor sit amet, consectetur adipisicing elit. ommodi dolor
-                    est nobis veniam! Eius rerum, un</h5>
-            </div>
-
-            <div>
-                <img src="a4.jpg">
-                <h5>legendacpsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor
-                    est nobis veniam!</h5>
-            </div>
-
-            <div>
-                <img src="a5.png">
-                <h5>legendacpsum dolor sit amet, consectetur adipisicing un</h5>
-            </div>
-            <div>
-                <img src="a6.png">
-                <h5>legendacpsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor
-                    est nobis veniam! Eius rerum, un</h5>
-            </div>
-
-            <div>
-                <img src="a11.jpg">
-                <h5>legendacpsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor
-                    est nobis veniam! Eius rerum, un</h5>
-            </div>
-
-            <div>
-                <img src="veu.png">
-                <h5>legendacpsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor
-                    est nobis veniam! Eius rerum, un</h5>
-            </div>
-
-            <div>
-                <img src="a13.jpg">
-                <h5>legendacpsum dolor sit amet, consectetur a commodi dolor
-                    est nobis veniam! Eius rerum, un</h5>
-            </div>
-
-            <div>
-                <img src="a13a.jpg">
-                <h5>legendacpsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor
-                    est nobis veniam! Eius rerum, un</h5>
-            </div>
-
-            <div>
-                <img src="a15.jpg">
-                <h5>legendacpsum</h5>
-            </div>
-
-            <div class="fotoGame">
-                <img src="fotoGame.png" id="f" alt="">
+            <div class="galeria-item">
+                <img src="img/a3.png" alt="">
+                <p>entendimento permite desenvolver um trabalho de qualidade em que se observa os principais aspectos de
+                    cada um dos softwares para a produção.</p>
             </div>
         </section>
 
-        <!-- Serviços...tipos projetos e valores-->
-        <section class="areaServiço" id="serviço">
-            <h2>Serviços</h2><br>
-            <p>
-                aorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor est nobis
-                veniam! Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum pariatur sequi
-                similique tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum
-                molestiae nemo officiis placeat quos repellat saepe temporibus voluptatum.</p><br>
-            <p>
-                bonsectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor
-                est nobis iam! Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum pariatur
-                sequi
-                similique tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum
-                molestiae nemo officiis placeat quos repellat saepe temporibus voluptatum.</p><br>
-            <p>
-                cdipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi
-                dolor est nobis iam! Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum
-                pariatur sequi
-                similique tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum
-                molestiae nemo officiis placeat quos repellat saepe temporibus voluptatum.</p><br>
-        </section>
-
-        <!-- Viagens...locais de integraçoes e valores-->
-        <section class="areaViagem" id="viagem">
-            <h2>Viagens</h2>
-            <div class="fotoViagem">
-                <img src="a10.jpg">
-            </div>
-            <p>cdipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing eor sit amet, consectetur
-                adipisicing
-                eor sit amet, consectetur adipisicing elit.dolor.</p><br>
-        </section>
-
-        <!--Area jovem - incentivo aos trabalhos-->
+        <!--=====================TEXTO AREA JOVEM C/ INFO DE JOGOS=================-->
         <section class="areaJovem" id="jovem">
-            <h2>Area Jovem</h2><br>
-            <p>
-                aorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor est nobis
-                veniam! Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum pariatur sequi
-                similique tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum
-                molestiae nemo officiis placeat quos repellat saepe temporibus voluptatum.</p><br>
-            <p>
-                bonsectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi dolor
-                est nobis veniam! Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum pariatur
-                sequi
-                similique tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum
-                molestiae emo officiis placeat quos repellat saepe temporibus voluptatum.</p><br>
-            <p>
-                cdipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid atque commodi
-                dolor est nobisveniam! Eius rerum, unde. Accusamus corporis esse eveniet exercitationem fugiat harum
-                pariatur sequi
-                similique tenetur vitae. Aliquam amet est excepturi, exercitationem facere fugit ipsa laborum
-                molestiae nemo officiis placeat quos repellat saepe temporibus voluptatum.</p><br>
+            <h2>Area Jovem</h2>
+            <br>
+            <p>Somos dotados de um “small home office" e profissionais com tempo e dedicação exclusiva
+                na construção de jogos "on-line".</p>
+            <br>
+            <p>Procuramos utilizar equipamentos e programas de última geração a fim de proporcionar
+                a qualidade no desenvolvimento dos nossos trabalhos.</p>
+            <br>
+            <p>Deixamos a criatividade dos textos e as imagens de videos por tua conta.</p>
+            <br>
+            <p> Se está interessado ou procura diversão; "Click" e participe dos melhores jogos,
+                interagindo e participando “on-line” entre os amigos.</p>
+            <br>
         </section>
 
-        <!--Formulario de E-Mail-->
+        <!--=====================AREA GAME C/ VIDEO EM MOVIMENTO=================-->
+        <section class="vdoGame" id="vdo-game">
+            <video autoplay muted loop>
+                <source src="img/video-game1.mp4" type="video/mp4">
+            </video>
+            <h4><a href="https://store.steampowered.com/app/1603290/Project_Hacker/" target="_blank">
+                    Click aqui para Jogar</a></h4>
+            <br>
+        </section>
+
+        <!--=====================AREA COLABORADORES (PORTIFÓLIO)=================-->
+        <section class="areaColaborador" id="colaborador">
+            <div class="txtColaborador">
+                <p class="p_Colaborador">COLABORADORES</p>
+            </div>
+            <div class="cardGira">
+                <div class="cardGira-inner">
+                    <div class="cardGira-front">
+                        <img src="img/foto3x4-1.jpg">
+                    </div>
+                    <div class="cardGira-back">
+                        <h1>Mary, A.</h1>
+                        <ul class="lista">
+                            <li>Digital Marketing</li>
+                            <li>Criação de Gráficos Digitais</li>
+                            <li>Media social</li>
+                            <li>Cursos: Administração e Criação de Conteúdos (Itália)
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cardGira">
+                <div class="cardGira-inner">
+                    <div class="cardGira-front">
+                        <img src="img/foto3x4-6.jpg" alt="foto 3x4">
+                    </div>
+                    <div class="cardGira-back">
+                        <h1>Kenedy, D.</h1>
+                        <ul class="lista">
+                            <li>Editing videos & photos</li>
+                            <li>3D Modeling</li>
+                            <li>University: Computer Science (Brazil)</li>
+                            <li>Cursos: Computer maintenance (Brazil)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cardGira">
+                <div class="cardGira-inner">
+                    <div class="cardGira-front">
+                        <img src="img/foto3x4-2.jpg" alt="Avatar">
+                    </div>
+                    <div class="cardGira-back">
+                        <h1>Smitt, H.</h1>
+                        <ul class="lista">
+                            <li>Game developer</li>
+                            <li>Cartoon producer</li>
+                            <li>University: Digital Game Design (Portugal)</li>
+                            <li>Cursos: Digital illustration e animated cartoon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=====================FORMULARIO DE E-MAIL======================-->
         <section class="areaContato" id="contato">
             <div class="tituloMsg">
                 <h3>Envie sua mensagem:</h3>
             </div>
-
             <form name="frmEnvia" action="https://api.staticforms.xyz/submit" method="POST" rel=”noopener”>
                 <input type="hidden" name="accessKey" value="b98de563-b45c-4acf-8d3d-902e27f0613b">
-
-                <!-- &nbsp 1, &ensp 2, &emsp 4, placeholder="Bom dia;...Obrigado(a)" -->
                 <h3>Nome:&emsp;&ensp;&nbsp; <input class="nome" type="text" name="name"></h3>
                 <h3>E-mail:&ensp;&nbsp; <input class="e-mail" type="text" name="email"></h3>
                 <h3>Assunto:&nbsp; <input class="assunto" type="text" name="subject"></h3>
-                <h3>Mensagem: <textarea class="txtArea" type="text"
-                        name="message">Bom dia; Favor me enviar um orçamento ou entrar em contato comigo...Obrigado(a)</textarea>
-                </h3>
+                <h3>Mensagem: <textarea class="txtArea" type="text" name="message"> Bom dia; Favor me enviar um orçamento ou entrar em contato comigo...Obrigado(a)</textarea></h3>
                 <h1>&emsp;&emsp;&emsp;&emsp;&emsp;
                     <button class="btn" type="submit" onclick="return validar()"><i
                             class="fa fa-paper-plane"></i>ENVIAR</button>
                 </h1>
-
-                <input type="hidden" name="redirectTo"
-                    value="http://192.168.1.68:5500/siteCompletoTeste%20-%20Copia/teste-grid.html#contact">
+                <input type="hidden" name="redirectTo" value="http://192.168.1.68:5500/index.html#home">
             </form>
         </section>
 
-        <!--Endereço e outras informações-->
+        <!--=====================ENDEREÇO E OUTRAS INFO (FOOTER)======================-->
         <footer class="footer">
             <div class="endereço">
                 Avenida da Liberdade, nº 8888 <br>
@@ -222,19 +205,22 @@
                 Email: rktt@outlook.pt <br>
                 Phone: +351 158158158
             </div>
-            <div class="$a">
-                <p><img src="Security2.png" alt=""></p>
+            <div class="ftr-logo1">
+                <p><img src="img/Security2.png" alt=""></p>
             </div>
-            <div class="$b">
-                <p><img src="a13a.jpg" alt=""></p>
+            <div class="ftr-logo2">
+                <p><img src="img/a1.png" alt=""></p>
             </div>
         </footer>
     </div>
 
     <script src="teste-grid.js"></script>
-
+    <!--
+        <script src="https://kit.fontawesome.com/7ea25e5ae3.js" crossorigin="anonymous"></script>
+     -->
 </body>
 
 </html>
 
-<!-------------------F I M-------------------/>
+
+<!--=================== F I M ========================--/>
