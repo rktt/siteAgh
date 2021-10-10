@@ -134,6 +134,7 @@ p::first-letter {font-family:'Courier New',Courier,monospace; font-size:50px; co
 }
 
 @media (max-width: 700px) {
+body {width: 700px}
 #container .header {display:flex; width:100%; height:auto; padding-top: 15px; justify-content:space-evenly;}
 .nav {display:none;}
 #container .logo {margin-left:20px;}
