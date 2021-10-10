@@ -28,7 +28,7 @@ body {font-size:1.6rem;}
 .menuHorizonte li a {padding:1.1rem; font-size:1.4rem; letter-spacing:0.3rem; display:block;}
 
 /*============AREA HOME========================*/
-.areaHome {grid-area:inicio; display:block; background-image:url("a12.jpeg"); background-repeat:no-repeat; background-size:cover; width:100%; height:auto; padding-top:100px; padding-bottom:50px; justify-content:center;}
+.areaHome {grid-area:inicio; display:block; background-image:url("a8.jpeg"); background-repeat:no-repeat; background-size:cover; width:100%; height:auto; padding-top:100px; padding-bottom:50px; justify-content:center;}
 #li2,#li3,#li4,#li5,.areaHome #li1 {width:100%; height:auto; text-align:center; line-height:100px; font-size:2.8rem; font-family:cursive; z-index:2;}
 #li2,#li4 {color:rgb(177, 194, 241);}
 #li1,#li3,#li5 {color:rgb(162, 247, 191);}
@@ -75,7 +75,7 @@ h4 a {color:rgb(244, 248, 7);}
 .btn {width:30%; height:40px; margin-bottom:16px; padding:5px; background-color:rgb(215, 235, 177); box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.2); border-radius:10px; font-size:1.1rem; letter-spacing:2rem; cursor:pointer;}
 .footer .endereço {width:600px; margin-left:5rem; justify-content:center; font-family:'Courier New',Courier,monospace; font-size:1.5rem; letter-spacing:.1rem; color:#fff; line-height:2.4rem;}
 .ftr-logo1 {width:25%;}
-.ftr-logo2 img {max-width:25%;}
+.ftr-logo2 img {max-width:40%;}
 
 /*=============================================*/
 li,ul {list-style:none;}
