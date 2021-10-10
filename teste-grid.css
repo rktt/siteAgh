@@ -28,12 +28,12 @@ body {font-size:1.6rem;}
 .menuHorizonte li a {padding:1.1rem; font-size:1.4rem; letter-spacing:0.3rem; display:block;}
 
 /*============AREA HOME========================*/
-.areaHome {grid-area:inicio; display:block; background-image:url("img/a12.jpeg"); background-repeat:no-repeat; background-size:cover; width:100%; height:auto; padding-top:100px; padding-bottom:50px; justify-content:center;}
+.areaHome {grid-area:inicio; display:block; background-image:url("a12.jpeg"); background-repeat:no-repeat; background-size:cover; width:100%; height:auto; padding-top:100px; padding-bottom:50px; justify-content:center;}
 #li2,#li3,#li4,#li5,.areaHome #li1 {width:100%; height:auto; text-align:center; line-height:100px; font-size:2.8rem; font-family:cursive; z-index:2;}
 #li2,#li4 {color:rgb(177, 194, 241);}
 #li1,#li3,#li5 {color:rgb(162, 247, 191);}
 
-/*==============AREA HOME=====================*/
+/*==============AREA SERVIÇOS=====================*/
 .areaServiços {grid-area:apres; width:100%; height:auto; background-color:rgb(247, 242, 245); color:rgb(46, 44, 44);}
 
 /*===========GALERIA FOTOS=====================*/
