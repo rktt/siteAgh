@@ -42,7 +42,7 @@ body {font-size:1.6rem;}
 .areaHome {
     grid-area:inicio;
      display:block;
-      background-image:url("img/a8.jpeg");
+      background-image:url("a8.jpeg");
        background-repeat:no-repeat;
         background-size:cover;
          width:100%;
