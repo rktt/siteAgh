@@ -1,0 +1,136 @@
+/* Site teste Agh */
+
+body,html {margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth;}
+html {font-size:62.5%; font-family:arial;}
+body {font-size:1.6rem;}
+
+h1 {margin:0 auto; text-align:center;}
+h2 {font-size:3.2rem; font-family:Arial,Helvetica,sans-serif; text-align:left; padding-top:100px; margin-left:15%;}
+h3 {font-size:2.4rem; font-family:'Courier New',Courier,monospace; text-align:center; margin-top:1.6rem;}
+h5 {background:rgba(0, 0, 0, .1); color:rgb(129, 127, 127); padding:10px; font-family:'Franklin Gothic Medium','Arial Narrow',Arial,sans-serif; text-align:justify; max-height:auto;}
+
+p {font-size:2.4rem; font-family:Arial,Helvetica,sans-serif; line-height:40px; margin:auto 15% auto 15%; text-align:justify;}
+p::first-letter {font-family:'Courier New',Courier,monospace; font-size:50px; color:rgb(133, 30, 30); text-transform:uppercase;}
+
+/*============AREA HEADER================*/
+.header {display:flex; position:fixed; width:100%; height:55px; padding:8px; background-color:rgba(31, 128, 128, 0.94); justify-content:space-evenly; align-items:center; z-index:5;}
+
+/*=============================================*/
+.logo {display:flex; margin-left:20px; text-shadow:2px 2px 4px rgb(173, 15, 15);}
+.logo a {font-size:2rem; letter-spacing:.4rem;}
+
+/*=============================================*/
+.menuHorizonte {display:flex;}
+.menuHorizonte li {border-left:rgb(219, 218, 217) solid 1px;}
+.menuHorizonte li a {padding:1.1rem; font-size:1.4rem; letter-spacing:0.3rem; display:block;}
+li,ul {list-style:none;}
+a {font-family:Arial,Helvetica,sans-serif; font-size:1.6rem; text-decoration:none; color:#fff;}
+a:hover {color:rgb(24, 26, 10); background-color:rgb(252, 250, 249);}
+
+/*============AREA HOME==========================*/
+.areaHome {display:block; background-image:url("a8.jpeg"); background-repeat:no-repeat; background-size:cover; width:100%; height:auto; padding-top:100px; padding-bottom:50px; justify-content:center;}
+#li2,#li3,#li4,#li5,.areaHome #li1 {width:100%; height:auto; text-align:center; line-height:100px; font-size:2.8rem; font-family:cursive; z-index:3;}
+#li2,#li4 {color:rgb(52, 101, 238);}
+#li1,#li3,#li5 {color:rgb(15, 136, 55);}
+
+/*==============AREA SERVIÇOS====================*/
+.areaServiços {width:100%; height:auto; background-color:rgb(247, 242, 245); color:rgb(46, 44, 44);}
+
+/*===========GALERIA FOTOS=======================*/
+.areaGaleria {display:flex; flex-wrap:wrap; width:100%; padding-top:90px; gap:20px; justify-content:center;}
+.areaGaleria .galeria-item {max-width:400px; box-shadow:0 4px 8px 0 rgba(17, 15, 15, 0.5),0 6px 20px 0 rgba(17, 15, 15, 0.7); border-radius:5px;}
+.areaGaleria .galeria-item p {margin:20px; font-size:15px;}
+
+/*=========TEXTO AREA JOVEM=======================*/
+.areaJovem {width:100%; height:auto; padding-top:20px;}
+
+/*=========VIDEO / GAME===========================*/
+.vdoGame {width:100%; height:auto; display:block; padding-top:90px; gap:10px;}
+.vdoGame video {max-width:80%; height:auto; margin-left:10%; margin-right:10%;}
+.vdoGame h4 {width:30%; margin:0 auto; border-radius:10px; text-align:center; padding:15px; background-color:rgb(61, 61, 58); font-size:x-large;}
+h4 a {color:rgb(244, 248, 7);}
+
+/*=======AREA COLABORADORES (PORTIFOLIO)==========*/
+.areaColaborador {display:flex; flex-wrap:wrap; width:100%; height:auto; padding:80px 10px; justify-content:center; gap:30px; background-color:rgb(238, 252, 252);}
+.areaColaborador .txtColaborador {display:block; width:100%; align-items:end;}
+.areaColaborador .p_Colaborador {margin-top:20px; text-align:center; padding:10px; box-shadow:0 4px 8px 0 rgba(17, 15, 15, 0.5),0 6px 20px 0 rgba(17, 15, 15, 0.7); border-radius:5px; align-items:center;}
+.areaColaborador .cardGira {background-color:transparent; width:300px; height:300px; perspective:1000px;}
+.areaColaborador .cardGira-interno {position:relative; width:100%; height:100%; text-align:center; transition:transform 0.6s; transform-style:preserve-3d; box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);}
+.areaColaborador .cardGira:hover .cardGira-interno {transform:rotateY(180deg);}
+.areaColaborador .cardGira-front,.cardGira-back {position:absolute; width:100%; height:100%;-webkit-backface-visibility:hidden; backface-visibility:hidden;}
+.areaColaborador .cardGira-front {background-color:#bbb; color:#fff;}
+.areaColaborador .cardGira-front img {width:100%; height:100%;}
+.areaColaborador .cardGira-back {background-color:#126297; transform:rotateY(180deg);}
+.areaColaborador .cardGira-back h1 {margin-top:1.6rem; font-size:large; color:#fff;}
+.areaColaborador .cardGira-back p {margin:0 auto; padding:20px; font-size:smaller; color:#fff;}
+.lista li {font-size:medium; color:rgb(250, 244, 244); text-align:left; list-style-type:square; line-height:30px;}
+
+/*=========AREA CONTATO========================*/
+.areaContato {width:100%; padding:60px 0 10px 0; gap:10px;}
+
+/*=========AREA FOOTER==========================*/
+.footer {display:flex; width:100%; height:20vh; align-items:center; background-color:rgb(61, 6, 6); opacity:0.9;}
+.assunto,.e-mail,.nome,.txtArea {width:50%; height:25.6px; margin-bottom:2px; padding:4px; box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.2); border-radius:10px;}
+.txtArea {height:9.1rem;}
+.btn {width:30%; height:40px; margin-bottom:16px; padding:5px; background-color:rgb(215, 235, 177); box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.2); border-radius:10px; font-size:1.1rem; letter-spacing:2rem; cursor:pointer;}
+.footer .endereço {width:600px; margin-left:5rem; justify-content:center; font-family:'Courier New',Courier,monospace; font-size:1.5rem; letter-spacing:.1rem; color:#fff; line-height:2.4rem;}
+.ftr-logo1 {width:25%;}
+.ftr-logo2 img {max-width:25%;}
+
+/*=============================================*/
+
+@media (max-width: 1000px) {
+.header {display:block; width:100%; height:auto;}
+.logo a {margin:0 auto; padding:10px;}
+.header .menuHorizonte {justify-content:center;}
+.areaHome {padding-top:150px;}
+}
+
+@media (max-width: 700px) {
+.header {display:flex; width:100%; height:auto; justify-content:space-evenly;}
+.nav {display:none;}
+.logo {margin-left:20px;}
+.dois,.tres,.um {background-color:#fff; height:5px; width:100%; margin:6px auto; transition-duration:0.3s;}
+.menuToggle {width:40px; height:30px; margin-right:20px;}
+/*FULL SCREEN*/
+.seçaoHamburger.on {position:absolute; top:0; left:0; width:100vW; height:100vh; background-color:rgba(31, 128, 128, 0.94); z-index:20; display:flex; justify-content:center; align-items:center;}
+.seçaoHamburger.on .nav {display:block;}
+.seçaoHamburger.on .menuToggle {position:absolute; right:60px; top:15px;}
+.seçaoHamburger.on .menuToggle .um {transform:rotate(45deg) translate(7px, 7px);}
+.seçaoHamburger.on .menuToggle .dois {opacity:0;}
+.seçaoHamburger.on .menuToggle .tres {transform:rotate(-45deg) translate(8px, -9px);}
+.seçaoHamburger.on .nav .menuHorizonte {display:block; text-align:center;}
+.seçaoHamburger.on .nav .menuHorizonte a {transition-duration:0.5s; font-size:3rem; line-height:4rem; display:block;}
+.menuHorizonte li {border-left:none;}
+.areaServiços h2,p {font-size:2.5rem;}
+.areaJovem h2,p {font-size:2.2rem;}
+}
+
+@media (max-width: 600px) {
+.areaHome #li1,.areaHome #li2,.areaHome #li3,.areaHome #li4,.areaHome #li5 {font-size:30px;}
+.vdoGame {padding-top:50px;}
+.vdoGame a {font-size:20px;}
+.footer .endereço {font-size: 1.2rem;}
+}
+
+@media (max-width: 500px) {
+.areaGaleria .galeria-item p {font-size:20px;}
+.areaJovem h2,p {font-size:2.2rem;}
+.areaContato h3 {font-size:3rem;}
+.btn {width:35%;}
+.footer .endereço {font-size: 1rem;}
+}
+
+@media (max-width: 480px) {
+.areaHome {padding-top:100px;}
+.areaContato h3 {font-size:2.6rem;}
+}
+
+@media (max-width: 320px) {
+.areaServiços h2,p {font-size:3rem;}
+.areaJovem h2,p {font-size:3rem;}
+.areaContato h3 {font-size:2.6rem;}
+.areaGaleria .galeria-item p {font-size:2.5rem;}
+}
+
+/*============= F I M ===================*/
