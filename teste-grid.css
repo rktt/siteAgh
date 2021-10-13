@@ -30,8 +30,8 @@ a:hover {color:rgb(24, 26, 10); background-color:rgb(252, 250, 249);}
 /*============AREA HOME==========================*/
 .areaHome {display:block; background-image:url("a8.jpeg"); background-repeat:no-repeat; background-size:cover; width:100%; height:auto; padding-top:100px; padding-bottom:50px; justify-content:center;}
 #li1,#li2,#li3,#li4,#li5 {background-color: rgba(15, 1, 1, 0.3); width:100%; height:auto; text-align:center; line-height:100px; font-size:2.8rem; font-family:cursive; z-index:3;}
-#li2,#li4 {color:rgb(52, 101, 238);}
-#li1,#li3,#li5 {color:rgb(15, 136, 55);}
+#li2,#li4 {color:rgb(238, 18, 172);}
+#li1,#li3,#li5 {color:rgb(245, 248, 38);}
 
 /*==============AREA SERVIÇOS====================*/
 .areaServiços {width:100%; height:auto; background-color:rgb(247, 242, 245); color:rgb(46, 44, 44);}
